@@ -33,3 +33,4 @@ def green():
     greenpin.off()
 
 
+green()
