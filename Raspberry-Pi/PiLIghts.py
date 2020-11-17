@@ -13,24 +13,36 @@ greenpin = LED(22)
 
 
 # # making it easier to turn the red lights on
-def red():
+def red(t):
     redpin.on()
-    sleep(1)
+    sleep(t)
     redpin.off()
 
 
 # making it easier to turn the blue lights on
-def blue():
+def blue(y):
     bluepin.on()
-    sleep(1)
+    sleep(y)
     bluepin.off()
 
 
 # making it easier to turn the green lights on
-def green():
+def green(x):
     greenpin.on()
-    sleep(1)
+    sleep(x)
     greenpin.off()
 
 
-green()
+while True:
+    text = input(">  ")
+    if text == "green":
+        num = input("delay>  ")
+        green(num)
+    if text == "red":
+        num = input("delay>  ")
+        red(num)
+    if text == "blue":
+        num = input("delay>  ")
+        blue(num)
+    if text == "exit":
+        break
