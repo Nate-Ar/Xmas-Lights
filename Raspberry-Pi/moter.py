@@ -11,8 +11,13 @@ def arm():
     sleep(2)
     servo.mid()
     sleep(1)
-def spin():
-    while True:
-        servo.max()
+
+
+
+
+
 arm()
-spin()
+
+
+servo.mid()
+sleep(2)
