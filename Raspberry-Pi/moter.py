@@ -6,9 +6,9 @@ servo = Servo(4)
 
 def arm():
     servo.min()
-    sleep(2)
+    sleep(1)
     servo.max()
-    sleep(2)
+    sleep(1)
     servo.mid()
     sleep(1)
 
@@ -17,7 +17,3 @@ def arm():
 
 
 arm()
-
-
-servo.mid()
-sleep(2)
