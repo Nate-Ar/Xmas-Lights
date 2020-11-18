@@ -20,5 +20,10 @@ slot8 = LED(19)
 
 def song1():
     os.system('mpg321 song1.mp3 &')
-
+    slot1.on()
+    sleep(.5)
+    slot1.off()
+    slot2.on()
+    sleep(.5)
+    slot2.off()
 song1()
