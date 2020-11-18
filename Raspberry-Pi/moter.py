@@ -14,4 +14,4 @@ def arm():
 def spin():
     servo.max()
 arm()
-
+spin()
