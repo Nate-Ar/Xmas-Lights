@@ -5,8 +5,6 @@ servo = Servo(4)
 
 
 def arm():
-    servo.min()
-    sleep(1)
     servo.max()
     sleep(1)
     servo.mid()
