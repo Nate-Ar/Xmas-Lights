@@ -12,6 +12,7 @@ def arm():
     servo.mid()
     sleep(1)
 def spin():
-    servo.max()
+    while True:
+        servo.max()
 arm()
 spin()
