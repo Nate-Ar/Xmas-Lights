@@ -52,3 +52,4 @@ def slot8(x):
 
 def song1():
     slot()
+song1()
