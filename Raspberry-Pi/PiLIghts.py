@@ -8,21 +8,49 @@ import os
 from time import sleep
 
 # these are the gpio pins so you know were to plug the ssr in at
-slot1 = LED(4)
-slot2 = LED(17)
-slot3 = LED(27)
-slot4 = LED(22)
-slot5 = LED(5)
-slot6 = LED(6)
-slot7 = LED(13)
-slot8 = LED(19)
 
+def slot1(x):
+    slot1 = LED(4)
+    slot1.on()
+    sleep(x)
+    slot1.off()
+def slot2(x):
+    slot2 = LED(4)
+    slot2.on()
+    sleep(x)
+    slot2.off()
+def slot3(x):
+    slot3 = LED(4)
+    slot3.on()
+    sleep(x)
+    slot3.off()
+def slot4(x):
+    slot4 = LED(4)
+    slot4.on()
+    sleep(x)
+    slot4.off()
+def slot5(x):
+    slot5 = LED(4)
+    slot5.on()
+    sleep(x)
+    slot5.off()
+def slot6(x):
+    slot6 = LED(4)
+    slot6.on()
+    sleep(x)
+    slot6.off()
+def slot7(x):
+    slot7 = LED(4)
+    slot7.on()
+    sleep(x)
+    slot7.off()
+def slot8(x):
+    slot8 = LED(4)
+    slot8.on()
+    sleep(x)
+    slot8.off()
 
 def song1():
-    slot1.on()
-    sleep(.5)
-    slot1.off()
-    slot2.on()
-    sleep(.5)
-    slot2.off()
-song1()
+    slot1(.3)
+    slot6(.5)
+    slot3(.4)
