@@ -16,5 +16,4 @@ def arm():
 
 
 
-servo.max()
-sleep(2)
+arm()
