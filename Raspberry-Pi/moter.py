@@ -11,10 +11,4 @@ def arm():
     servo.mid()
     sleep(1)
 
-while True:
-    inputs = input(">  ")
-
-    if inputs == "arm":
-        arm()
-    if inputs == "exit":
-        break
+arm()
