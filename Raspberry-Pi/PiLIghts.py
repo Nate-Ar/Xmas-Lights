@@ -4,45 +4,21 @@
 
 # Import this stuff so you can control the pins and you can sleep your program
 from gpiozero import LED
+import os
 from time import sleep
 
 # these are the gpio pins so you know were to plug the ssr in at
-redpin = LED(17)
-bluepin = LED(27)
-greenpin = LED(22)
+slot1 = LED(4)
+slot2 = LED(17)
+slot3 = LED(27)
+slot4 = LED(22)
+slot5 = LED(5)
+slot6 = LED(6)
+slot7 = LED(13)
+slot8 = LED(19)
 
 
-# # making it easier to turn the red lights on
-def red(t):
-    redpin.on()
-    sleep(t)
-    redpin.off()
+def song1():
+    os.system('mpg321 song1.mp3 &')
 
-
-# making it easier to turn the blue lights on
-def blue(y):
-    bluepin.on()
-    sleep(y)
-    bluepin.off()
-
-
-# making it easier to turn the green lights on
-def green(x):
-    greenpin.on()
-    sleep(x)
-    greenpin.off()
-
-
-while True:
-    text = input(">  ")
-    if text == "green":
-        num = input("delay>  ")
-        green(num)
-    if text == "red":
-        num = input("delay>  ")
-        red(num)
-    if text == "blue":
-        num = input("delay>  ")
-        blue(num)
-    if text == "exit":
-        break
+song1()
