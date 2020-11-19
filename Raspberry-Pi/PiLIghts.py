@@ -7,7 +7,7 @@ from gpiozero import LED
 import os
 from time import sleep
 
-# these are the gpio pins so you know were to plug the ssr in at
+# on and off
 
 def slot1(x):
     slot1 = LED(4)
@@ -50,10 +50,10 @@ def slot8(x):
     sleep(x)
     slot8.off()
 
+# songs
 def song1():
-    slot1(.5)
-    slot6(.5)
-    slot8(.5)
+    while True:
+        slot8(.5)
 
-
+# run
 song1()
