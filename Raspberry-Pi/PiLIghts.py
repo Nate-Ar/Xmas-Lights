@@ -57,6 +57,8 @@ def song1():
         sleep(.5)
         slot7(.5)
         sleep(.5)
+        slot6(.5)
+        sleep(.5)
 
 # run
 song1()
