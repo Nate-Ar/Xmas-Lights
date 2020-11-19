@@ -53,13 +53,13 @@ def slot8(x):
 # songs
 def song1():
     while True:
-        slot1(.5)
+        slot8(.5)
         sleep(.5)
-        slot2(.5)
+        slot7(.5)
         sleep(.5)
-        slot3(.5)
+        slot6(.5)
         sleep(.5)
-        slot4(.5)
+        slot5(.5)
         sleep(.5)
 
 # run
