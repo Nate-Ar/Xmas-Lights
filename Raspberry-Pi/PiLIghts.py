@@ -54,9 +54,9 @@ def slot8(x):
 def song1():
     while True:
         slot8(.5)
-        sleep(3)
+        sleep(.5)
         slot7(.5)
-        sleep(3)
+        sleep(.5)
 
 # run
 song1()
